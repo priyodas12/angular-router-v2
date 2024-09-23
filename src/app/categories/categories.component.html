@@ -1,1 +1,23 @@
-<p>categories works!</p>
+<div class="container">
+  <h2 class="mt-4">Categories</h2>
+  <p class="lead">This page displays the list of categories in the system.</p>
+
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>#</th>
+        <th>Category Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ category.name }}</td>
+        <td>{{ category.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="btn btn-success" (click)="addCategory()">Add Category</button>
+</div>

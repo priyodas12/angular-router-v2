@@ -1,0 +1,9 @@
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-lg {
+  margin-right: 1rem;
+}

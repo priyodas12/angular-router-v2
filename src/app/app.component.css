@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  background-color: mediumaquamarine;
+  border-radius: 10px;
+}
+
+.nav {
+  justify-content: center;
+  /* Center the navbar items */
+  margin-bottom: 20px;
+  /* Add some spacing below the navbar */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: #555;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
